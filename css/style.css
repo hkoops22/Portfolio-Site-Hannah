@@ -58,10 +58,11 @@ a:active { /* selected link */
 /* link button */
 .button {
   display: inline-block;
-  background-color: #f5f5f5;
-  color: #ffffff !important; /* needed to override the default link color */
-  font-weight: 700;
-  padding: 10px:
+  background-color: #d65c37;
+  color: #f5f5f5 !important; /* needed to override the default link color */
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+  padding: 10px;
   bottom-radius: 3px;
   border-bottom: 2px solid #6991AC; /* width of the border, type, color */
   transition: .2s opacity;
@@ -76,18 +77,20 @@ a:active { /* selected link */
   opacity: .5;
   text-decoration: none;
 }
-.button.contact {
+.button-contact {
   background-color: transparent;
   color: #d65c37 !important;
   text-transform: uppercase;
   border: 2px solid #d65c37;
 }
-.button.contact:hover,
-.button.contact:focus {
+.button-contact:hover,
+.button-contact:focus {
+  background-color: #d65c37;
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #f5f5f5 !important;
   text-decoration: none;
 }
-.button.contact:active {
+.button-contact:active {
   color: #d65c37
   opacity: .5;
   text-decoration: none;
