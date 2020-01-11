@@ -9,7 +9,7 @@ Secondary Color (light blue): #c3d7df
 * {
   box-sizing: border-box;
 }
-
+/* layout styling home */
 body {
   background-color: #f5f5f5;
   font-family: 'Lora', serif;
@@ -69,7 +69,6 @@ nav>ul {
 
 nav>ul>li {
   display: inline-block;
-  width: 100%;
 }
 
 nav>ul>li>a {
@@ -92,7 +91,7 @@ nav>ul>li>a {
 
 /* main */
 main {
-  padding-top: 250px;
+  padding-top: 200px;
 }
 
 /* img */
@@ -114,9 +113,8 @@ ul.footer {
   padding: 0;
 }
 
-li.footer {
+.footer li {
   display: inline-block;
-  width: 100%;
 }
 
 /* links */
@@ -127,7 +125,6 @@ a {
 }
 
 a:visited {
-  /* visited link */
   color: #677279;
 }
 
@@ -135,11 +132,9 @@ a:hover,
 a:focus {
   color: #677279;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
-  /* selected link */
   color: #d65c37;
 }
 
@@ -154,7 +149,6 @@ a:active {
   padding: 10px;
   bottom-radius: 3px;
   border-bottom: 2px solid #6991AC;
-  /* width of the border, type, color */
   transition: .2s opacity;
 }
 
@@ -195,6 +189,7 @@ a:active {
 /* layout styling */
 .container {
   padding: 0 15px;
+  max-width: 1200px;
 }
 
 .row {
@@ -214,5 +209,9 @@ a:active {
 }
 
 #hero h1 {
+  text-align: center;
+}
+/* additional styling for about */
+#about h1 {
   text-align: center;
 }
