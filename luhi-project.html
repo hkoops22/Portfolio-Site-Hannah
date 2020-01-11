@@ -14,9 +14,9 @@
 
 <body>
   <!-- Header Section -->
-  <header>
-    <div>
-      <svg version="1.1" class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+  <header id="header">
+    <div class="container">
+      <svg version="1.1" class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" width="150px" style="enable-background:new 0 0 300 300;" xml:space="preserve">
         <style type="text/css">
           .st0 {
             fill: #C3D8DF;
@@ -95,7 +95,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
-          <li><a href="about.html" target="_self">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -103,22 +103,23 @@
   </header>
   <!-- Project Image and short description -->
   <main>
-    <div class="">
-      <div class="">
-        <h1>Lutheran High School Web Design</h1>
+    <div id="project">
+      <div class="container">
+        <h2>Lutheran High School Web Design</h2>
+      </div>
         <div class="">
           <picture>
             <source srcset="img/luhi/luhi-home-mobile.jpg" media="(max-width:767px)">
             <img src="img/luhi/luhi-home-desktop.jpg" alt="LuHi home">
           </picture>
+        </div>
+          <div class="container">
           <p>Lutheran High School was in need of a responsive website that told a story about student
             success and answered the question of why parents should choose LuHi as the high school for
             their student. Over a 4 month period, I researched current website and design trends, created
             mockups and wireframes for the site, gathered images, and wrote page content. Finally, I
-            worked with developers to build the site on HubSpot. Visit the site here: www.lhsparker.org</p>
-        </div>
-        <div class="">
-          <h2>Project Timeline</h2>
+            worked with developers to build the site on HubSpot. Visit the site here: <a href"www.lhsparker.org">www.lhsparker.org</a></p>
+          <h3>Project Timeline</h3>
           <ul>
             <li>Week 1-2: Research phase - gather up to date info about current website and design trends</li>
             <li>Week 2-4: Create brand standards, gather assets to include on the site, determine visual
@@ -129,18 +130,17 @@
             <li>Week 12-15: Added content to site</li>
             <li>Week 15-16: finishing touches, evaluation, and site launch</li>
           </ul>
-          <h2>Conclusion</h2>
+          <h3>Conclusion</h3>
           <p>Text wrapping up the info . . .</p>
         </div>
       </div>
-    </div>
   </main>
   <!-- Footer Section -->
   <footer id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
       <p>Would you like to work together? Please get in touch. Call: <a href="tel:+17208227981">720-822-7981</a> or email me.</p>
-      <div>
+      <div class="footer-button">
         <a href="mailto:hannahkoops@gmail.com" class="button-contact">Email Me</a>
       </div>
       <div>
@@ -168,7 +168,7 @@
                 style="fill-rule:evenodd;clip-rule:evenodd;fill:#EC4A89;" /></svg></li>
         </ul>
       </div>
-      <p>Copyright Hannah Buchholz, 2020</p>
+          <p style="font-size:60%">Copyright Hannah Buchholz, 2020</p>
     </div>
   </footer>
 </body>
