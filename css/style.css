@@ -194,7 +194,6 @@ footer a {
 /* layout styling */
 .container {
   padding: 0 15px;
-  max-width: 1200px;
 }
 
 .row {
@@ -207,7 +206,7 @@ footer a {
 }
 
 #hero {
-  background-color: #c3d7df;
+  background-color: #6991AC;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -215,6 +214,11 @@ footer a {
 
 #hero h1 {
   text-align: center;
+  color: #f5f5f5
+}
+#hero p {
+  text-align: center;
+  color: #f5f5f5;
 }
 /* additional styling for about */
 #about {
