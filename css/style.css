@@ -9,6 +9,7 @@ Secondary Color (light blue): #c3d7df
 * {
   box-sizing: border-box;
 }
+
 /* layout styling home */
 body {
   background-color: #f5f5f5;
@@ -51,7 +52,7 @@ h4 {
 header {
   background-color: #c3d7df;
   padding: .625em;
-  bottom-border: 3px solid #677279;
+  border-bottom: 3px solid #677279;
   text-align: center;
   box-shadow: -3px 3px 10px 0px rgba(50, 50, 50, 0.61);
   position: fixed;
@@ -201,7 +202,7 @@ footer a {
 }
 
 #projects .row {
-  padding-bottom: 25px;
+  border-bottom: 1px solid #677279;
 }
 
 #hero {
@@ -232,4 +233,61 @@ footer a {
 /* additional styling for project pages */
 #project {
   padding: 20px 0 0 0;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    padding: 20px 0 0 0;
+  }
+  main {
+    padding-top: 99px;
+  }
+  h3 {
+  margin-top: 0;
+  }
+  #hero span {
+    display: block;
+  }
+  .col-md-6 {
+  width: 50%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+.col-lg-7 {
+width: 60%;
+}
+.col-lg-5 {
+width: 40%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+[class*="col-"] {
+  float: left;
+  padding: 0 10px 15px 10px;
 }
