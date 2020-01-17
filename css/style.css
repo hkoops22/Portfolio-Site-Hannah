@@ -200,7 +200,11 @@ footer a {
 .row {
   margin: 25px 0;
 }
-
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #projects .row {
   border-bottom: 1px solid #677279;
 }
@@ -259,11 +263,6 @@ nav {
   }
   .col-md-6 {
   width: 50%;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 }
 /* ==============================
