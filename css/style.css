@@ -88,7 +88,7 @@ nav>ul>li>a {
 }
 
 /* navigation animation */
-nav.topBotomBordersIn a:before, nav.topBotomBordersIn a:after {
+nav ul.topBottomBordersIn a:before, nav.topBottomBordersIn a:after {
   position: absolute;
   left: 0px;
   width: 100%;
@@ -99,17 +99,17 @@ nav.topBotomBordersIn a:before, nav.topBotomBordersIn a:after {
   transition: all 0.3s;
 }
 
-div.topBotomBordersIn a:before {
+nav ul.topBottomBordersIn a:before {
   top: 0px;
   transform: translateY(-10px);
 }
 
-div.topBotomBordersIn a:after {
+nav ul.topBottomBordersIn a:after {
   bottom: 0px;
   transform: translateY(10px);
 }
 
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+nav ul.topBottomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -284,12 +284,21 @@ footer a {
 }
 
 /* animations */
-.sun {
+.stroke0 {
   animation: 4s color-change infinite alternate linear;
 }
 .mountain {
   animation: 2s bounce 1;
 }
+
+.st3 {
+  animation: 4s color-change2 infinite alternate linear;
+}
+
+.st4 {
+  animation: 2s bounce 1;
+}
+
 
 @keyframes bounce {
   from,
@@ -340,15 +349,28 @@ footer a {
 
 @keyframes color-change {
   0% {
-    fill: #edc655;
+    fill: #fed66e;
   }
 
   50% {
-    fill: #fcffad;
+    fill: #fec842;
   }
 
   100% {
-    fill: #f76414;
+    fill: #ffc22c;
+  }
+}
+@keyframes color-change2 {
+  0% {
+    fill: #c3c3e5;
+  }
+
+  50% {
+    fill: #bfbfd6;
+  }
+
+  100% {
+    fill: #f1f0ff;
   }
 }
 
