@@ -51,26 +51,18 @@ h4 {
 /* header and nav */
 header {
   background-color: #c3d7df;
-  padding: .625em;
+  padding: .625em .625em 0 .625em;
   border-bottom: 3px solid #677279;
-  text-align: center;
   box-shadow: -3px 3px 10px 0px rgba(50, 50, 50, 0.61);
   position: fixed;
   width: 100%;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -80,48 +72,41 @@ nav>ul>li>a {
   font-weight: 700;
 }
 
-nav>ul>li>a {
-  padding: 0 5px;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-/* navigation animation */
-nav ul.topBottomBordersIn a:before, nav.topBottomBordersIn a:after {
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
   position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #FFF;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
+  right: 0;
+  top: 1em;
+  font-size: 22px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
 
-nav ul.topBottomBordersIn a:before {
-  top: 0px;
-  transform: translateY(-10px);
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #d65c37;
 }
 
-nav ul.topBottomBordersIn a:after {
-  bottom: 0px;
-  transform: translateY(10px);
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
-nav ul.topBottomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-/* end nav animation */
 .logo {
   max-width: 100px;
 }
 
 /* main */
 main {
-  padding-top: 150px;
+  padding-top: 68px;
 }
 
 /* img */
@@ -161,7 +146,6 @@ a:visited {
 a:hover,
 a:focus {
   color: #677279;
-  text-decoration: underline;
 }
 
 a:active {
@@ -183,7 +167,7 @@ footer a {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #6991AC;
-  transition: .2s opacity ease 0;
+  transition: .2s opacity ease;
 }
 
 .button:hover,
@@ -377,19 +361,65 @@ footer a {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+  .logo {
+    max-width: 100px;
+  }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
     padding: 20px 0 0 0;
   }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+  .navtoggle li:last-child {
+    display: none;
+  }
+  /* navigation animation */
+  nav ul.topBottomBordersIn a {
+    position: relative;
+  }
 
+
+  nav.topBottomBordersIn a:before, nav.topBottomBordersIn a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #677279;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  nav.topBottomBordersIn a:before {
+    top: 0px;
+    transform: translateY(-10px);
+  }
+
+  nav.topBottomBordersIn a:after {
+    bottom: 0px;
+    transform: translateY(10px);
+  }
+
+  nav.topBottomBordersIn a:hover:before, nav.topBottomBordersIn a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  /* end nav animation */
+  nav>ul>li {
+    display: inline-block;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
   main {
     padding-top: 99px;
   }
@@ -397,6 +427,7 @@ Medium devices (640px and larger)
   h3 {
     margin-top: 0;
   }
+
 
   [class*="col-"] {
     float: left;

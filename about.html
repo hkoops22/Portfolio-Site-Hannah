@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Hannah, UX/UI Designer</title>
   <link href="favicon.ico" rel="shortcut icon">
+  <script src="https://kit.fontawesome.com/e37b0ed0d2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
@@ -16,6 +19,7 @@
   <!-- Header Section -->
   <header id="header">
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <svg version="1.1" class="logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" width="150px" style="enable-background:new 0 0 300 300;" xml:space="preserve">
         <style type="text/css">
           .st0 {
@@ -96,7 +100,8 @@
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
